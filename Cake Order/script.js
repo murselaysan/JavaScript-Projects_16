@@ -64,6 +64,8 @@ const payment = (order) => {
 })
 }
 
+
+
 const stockControl = (order) => {
   return new Promise((resolve, reject) => {
       patisserie[order[0]].stock = patisserie[order[0]].stock - order[1];
@@ -78,7 +80,9 @@ const stockControl = (order) => {
 
 
 const cakeType = document.getElementById('cakeSelect');
+
 const orderAmount = document.getElementById('cakeAmount');
+
 const orderBtn = document.getElementById('submit_btn');
 
 orderBtn.onclick = ()=>{
