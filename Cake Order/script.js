@@ -47,6 +47,9 @@ const checkOrder = (order) => {
 
 
 
+
+
+
 const payment = (order) => {
   return new Promise((resolve, reject) => {
   document.addEventListener("keypress", function (event) {
